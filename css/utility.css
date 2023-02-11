@@ -1,0 +1,42 @@
+.section-label{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+}
+
+.section-label h3{
+	background: #333;
+	padding: 0 5px;
+	color: ghostwhite;
+	text-transform: uppercase;
+	font-family: 'Open Sans', sans-serif;
+	
+}
+
+.section-label > hr{
+	width: 25px;
+	height: .5px;
+	border: .5px solid #222;
+}
+
+
+.btn-global{
+	height: 48px;
+	/* width: 120px; */
+	padding: 0 10px;
+	margin: 0 3px;
+	font-family: 'Open Sans', sans-serif;
+	border-radius: 5px;
+	font-size: 1rem;
+}
+
+/* For Nav Menu */
+
+.open{
+	right: 0;
+}
+
+.close{
+	right: -200px;
+}

@@ -1,0 +1,23 @@
+
+.about{
+	text-align: center;
+	/* background: red; */
+	margin: 0 20px;
+	height: 100vh;
+}
+
+.about p{
+	font-family: 'Sofia Sans', sans-serif;
+	line-height: 27px;
+	color: #0a0a31;
+	/* margin: 0 20px; */
+}
+
+.image-wrapper{
+	margin: 0 30px;
+}
+
+.image-wrapper img{
+	border-radius: 10px;
+	margin-top: 20px;
+}
