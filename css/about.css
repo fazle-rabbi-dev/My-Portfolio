@@ -3,7 +3,8 @@
 	text-align: center;
 	/* background: red; */
 	margin: 0 20px;
-	height: 100vh;
+	margin-bottom: 40px;
+	/* height: 100vh; */
 }
 
 .about p{
@@ -21,3 +22,25 @@
 	border-radius: 10px;
 	margin-top: 20px;
 }
+
+
+/* Responsive Design */
+
+@media only screen and (min-width: 768px) {
+	.about-container{
+		display: flex;
+		
+	}
+	
+	.image-wrappe{
+		
+	}
+	
+	.about-info{
+		
+	}
+	
+}
+
+
+

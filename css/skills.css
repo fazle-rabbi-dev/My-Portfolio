@@ -11,7 +11,7 @@
 
 .btn-web{
 	background: #784beb;
-	border: none;
+	border: 2px solid transparent;
 	color: ghostwhite;
 }
 

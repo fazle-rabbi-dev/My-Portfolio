@@ -7,36 +7,54 @@ const otherSkills = document.querySelector(".other-skills");
 const skillsContainer = document.querySelector(".skills-container");
 
 
-function showSkills(visible,hide1,hide2){
-	if(visible == 'webSkills'){
+const btnOutline = `
+	background: transparent;
+	color:#784beb;
+	border: 2px solid #784beb;
+`
+
+const btnFill = `
+	background: #784beb;
+	border: none;
+	color: ghostwhite;
+`
+
+function showSkills(visible, hide1, hide2) {
+	if (visible == 'webSkills') {
+		programming_btn.style = btnOutline;
+		other_btn.style = btnOutline;
+		web_btn.style = btnFill;
 		programmingSkills.style.display = 'none'
 		otherSkills.style.display = 'none'
 		skillsContainer.style.height = '800px'
 		webSkills.style.display = 'block'
-	}
-	else if(visible == 'programmingSkills'){
+	} else if (visible == 'programmingSkills') {
+		web_btn.style = btnOutline;
+		other_btn.style = btnOutline;
+		programming_btn.style = btnFill;
 		webSkills.style.display = 'none'
 		otherSkills.style.display = 'none'
 		skillsContainer.style.height = '320px'
 		programmingSkills.style.display = 'block'
-	}
-	else{
+	} else {
+		programming_btn.style = btnOutline;
+		web_btn.style = btnOutline;
+		other_btn.style = btnFill;
 		webSkills.style.display = 'none'
 		programmingSkills.style.display = 'none'
 		skillsContainer.style.height = '440px'
 		otherSkills.style.display = 'block'
 	}
+
 }
+	web_btn.addEventListener("click", ()=> {
+		showSkills('webSkills', 'programmingSkills', 'otherSkills');
+	});
 
-web_btn.addEventListener("click", ()=>{
-	showSkills('webSkills','programmingSkills','otherSkills');
-});
+	programming_btn.addEventListener("click", ()=> {
+		showSkills('programmingSkills', 'webSkills', 'otherSkills');
+	});
 
-programming_btn.addEventListener("click", ()=>{
-	showSkills('programmingSkills','webSkills','otherSkills');
-});
-
-other_btn.addEventListener("click", ()=>{
-	showSkills('otherSkills','webSkills','programmingSkills');
-});
-
+	other_btn.addEventListener("click", ()=> {
+		showSkills('otherSkills', 'webSkills', 'programmingSkills');
+	});

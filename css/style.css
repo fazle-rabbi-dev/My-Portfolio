@@ -33,6 +33,16 @@ header{
 	z-index: 999;
 }
 
+.nav-logo{
+	background: #222;
+	height: 10px;
+	width: 10px;
+	border-radius: 5px;
+	color: white;
+	padding: 4px;
+	font-family: 'Unbounded', cursive;
+}
+
 .nav-container{
 	height: 100%;
 	background: white;
@@ -66,6 +76,8 @@ header{
 .nav-bar{
 	height: 100%;
 	background: white;
+	transition: .3s;
+	/* background: #090427; */
 	color: #222;
 	width: 200px;
 	position: fixed;
@@ -171,11 +183,29 @@ header{
 	color: white;
 }
 
+.btn-about:active{
+	background: lightgray;
+}
+
+.btn-hover{
+	background: #884beb;
+	border: none;
+	color: white;
+}
+
+.btn-hover-out{
+	border: 2px solid #884beb;
+	background: none;
+	color: #884beb;
+}
+
 .btn-about{
 	border: 2px solid #884beb;
 	background: none;
 	color: #884beb;
 }
+
+
 /* Button Style */
 
 
@@ -208,9 +238,15 @@ header{
 	margin-top: 20px;
 }
 
+.follow-container .follow-link-container a{
+	margin: 0 10px;
+	color: #222;
+}
+
+
 .follow-container .follow-link-container i{
 	font-size: 20px;
-	margin: 0 10px;
+	/* margin: 0 10px; */
 }
 
 

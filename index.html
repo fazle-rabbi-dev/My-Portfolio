@@ -16,6 +16,8 @@
    <link rel="stylesheet" href="css/about.css" type="text/css" media="all" />
    <link rel="stylesheet" href="css/skills.css" type="text/css" media="all" />
    <link rel="stylesheet" href="css/projects.css" type="text/css" media="all" />
+   <link rel="stylesheet" href="css/contact.css" type="text/css" media="all" />
+   <link rel="stylesheet" href="css/footer.css" type="text/css" media="all" />
    <link rel="stylesheet" href="css/utility.css" type="text/css" media="all" />
    <!-- FONTAWESOME KIT -->
    <script src="https://kit.fontawesome.com/2982aea746.js" crossorigin="anonymous"></script>
@@ -25,7 +27,8 @@
    <header>
 		<div class="nav-container">
 			<div class="">
-				<img width="28px" class="logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT01aPyJJO04sk-jjLqXwPhbGXq8z0Lq1mgcQ&usqp=CAU" alt="" />
+				<!-- <img width="28px" class="logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT01aPyJJO04sk-jjLqXwPhbGXq8z0Lq1mgcQ&usqp=CAU" alt="" /> -->
+				<a class="" href="#home"><span class="nav-logo">FR</span></a>
 			</div>
 			<div class="">
 				<img width="28px" class="nav-menu menu-icon saturate grayscale" src="images/bar.png" alt="" />
@@ -39,15 +42,16 @@
 			</div>
 			<hr class="navbar-hr"/>
 			<div class="nav-link-wrapper">
-				<li class="nav-item"><a class="nav-link" href="#"><img class="nav-link-icon" width="18px" src="images/about.png" alt="" />About</a></li>
-				<li class="nav-item"><a class="nav-link" href="#"><img class="nav-link-icon" width="18px" src="images/skills.png" alt="" />Skills</a></li>
-				<li class="nav-item"><a class="nav-link" href="#"><img class="nav-link-icon" width="18px" src="images/project.png" alt="" />Projects</a></li>
-				<li class="nav-item"><a class="nav-link" href="#"><img class="nav-link-icon" width="18px" src="images/contact.png" alt="" />Contact</a></li>
+				<li class="nav-item about-link"><a class="nav-link" href="#about"><img class="nav-link-icon" width="18px" src="images/about.png" alt="" />About</a></li>
+				<li class="nav-item skill-link"><a class="nav-link" href="#skills"><img class="nav-link-icon" width="18px" src="images/skills.png" alt="" />Skills</a></li>
+				<li class="nav-item project-link"><a class="nav-link" href="#projects"><img class="nav-link-icon" width="18px" src="images/project.png" alt="" />Projects</a></li>
+				<li class="nav-item contact-link"><a class="nav-link" href="#contact"><img class="nav-link-icon" width="18px" src="images/contact.png" alt="" />Contact</a></li>
 			</div>
 	</nav>
    
    <main>
 		<!-- Introduction -->
+		<p id="home"></p>
 		<div class="intro">
 			<h4 class="hi">Hi 👋, Im</h4>
 			<h1 class="name">Fazle Rabbi</h1>
@@ -56,7 +60,7 @@
 			<h4 class="label">Programmer</h4>
 			<div class="btn-wrapper">
 				<button class="btn btn-resume">Get Resume</button>
-				<button class="btn btn-about">About Me</button>
+				<button class="btn btn-about" onclick="window.location.href = '#about'">About Me</button>
 			</div>
 			<div class="follow-container">
 				<div class="section-label">
@@ -66,33 +70,40 @@
 					<hr />
 				</div>
 				<div class="follow-link-container">
-					<i class="fab fa-github"></i>
-					<i class="fab fa-facebook"></i>
-					<i class="fab fa-instagram"></i>
-					<i class="fab fa-linkedin"></i>
-					<i class="fab fa-twitter"></i>
+					<a href="https://github.com/fh-rabbi"><i class="fab fa-github"></i></a>
+					<a href="https://facebook.com/fozley.rabbi"><i class="fab fa-facebook"></i></a>
+					<a href="https://instagram.com/___fazle_rabbi___"><i class="fab fa-instagram"></i></a>
+					<a href="#"><i class="fab fa-linkedin"></i></a>
+					<a href="https://twitter.com/fhrabbi"><i class="fab fa-twitter"></i></a>
 				</div>
 			</div>
 		</div>
 		<!-- About Me -->
+		<p id="about"></p>
 		<div class="about">
 			<div class="section-label">
 				<hr />
 				<h3>About Me</h3>
 				<hr />
 			</div>
-			<div class="image-wrapper">
-				<img width="100%" src="images/fazle-rabbi.jpg" alt="" />
-			</div>
-			<p>
-				Hello im Fazle Rabbi,a passionate Web & Mobile app developer.Who love to do awesome things by coding. My favourite hobby is coding.Writing codes & developing apps are my passion.
-			</p>
-			<div class="btn-wrapper">
-				<button class="btn btn-resume">Get Resume</button>
-				<button class="btn btn-about">My Skills</button>
+			<div class="about-container">
+				<div class="image-wrapper">
+					<img width="100%" src="images/fazle-rabbi.jpg" alt="" />
+				</div>
+				<div class="about-info">
+					<p>
+						Hello im Fazle Rabbi,a passionate Web & Mobile application developer and I am currently studying B.S.C honours in botany department.I love to do awesome things by writing codes. My favourite hobby is coding.Writing codes & developing apps are my passion.
+						My favourite languages is Javascript & Python.
+					</p>
+					<div class="btn-wrapper">
+						<button class="btn btn-resume">Get Resume</button>
+						<button class="btn btn-about" onclick="window.location = '#skills'">My Skills</button>
+					</div>
+				</div>
 			</div>
 		</div>
 		<!-- My Skills -->
+		<p id="skills"></p>
 		<div class="skills">
 			<div class="section-label">
 				<hr />
@@ -213,6 +224,7 @@
 			
 		</div>
 		<!--Projects-->
+		<p id="projects"></p>
 		<div class="projects">
 			<div class="section-label">
 				<hr />
@@ -220,16 +232,97 @@
 				<hr />
 			</div>
 			<div class="skills-label-box">
-				<button class="btn-global btn-web">Web</button>
-				<button class="btn-global btn-others">Others</button>
+				<button class="btn-global btn-web btn-web-projects">Web</button>
+				<button class="btn-global btn-others btn-others-projects">Others</button>
 			</div>
-			<div class="projects-container">
+			<div class="web-projects projects-container">
 				<!--This Div For Responsive Design-->
 				<div class="card-container">
 					<div class="card"> <!--Card Start-->
-						<img width="100%" class="" src="https://zonayed.me/static/gradienta-a8e5b430898f3170d42032b83fc34b8e.jpg" alt="" />
+						<img width="100%" class="" src="" alt="Banner" />
 						<div class="card-body">
 							<h2 class="card-title">Gmail Bomber</h2>
+							<p class="card-text">
+								🔥 This is a powerful and awesome Gmail-Bomber website.By using this website you can send unlimited email to your target email address by one click
+							</p>
+							<div class="wrapper">
+								<a href="https://github.com/fh-rabbi/Gmail-Bomber-Website"><button><i class="fab fa-github"></i></button></a>
+								<a href="https://gmail-bomber.netlify.app"><button><iconify-icon icon="mdi:web"></iconify-icon></button></a>
+							</div>
+							<div class="tech">
+								<span>html</span>
+								<span>css</span>
+								<span>js</span>
+								<span>python -flask</span>
+							</div>
+						</div>
+					</div> <!--Card Close-->
+					<div class="card"> <!--Card Start-->
+						<img width="100%" class="" alt="Banner" />
+						<div class="card-body">
+							<h2 class="card-title">Url Shortner</h2>
+							<p class="card-text">
+								This is a simple url shortner web app.By using this app/website you can short your long url easily.
+							</p>
+							<div class="wrapper">
+								<a href="https://github.com/fh-rabbi/URL-SHORTNER-APP"><button><i class="fab fa-github"></i></button></a>
+								<a href="https://www.frabbi.cf/"><button><iconify-icon icon="mdi:web"></iconify-icon></button></a>
+							</div>
+							<div class="tech">
+								<span>nodejs</span>
+								<span>expressjs</span>
+								<span>mongodb</span>
+							</div>
+						</div>
+					</div> <!--Card Close-->
+					<div class="card"> <!--Card Start-->
+						<img width="100%" class="" alt="Banner" />
+						<div class="card-body">
+							<h2 class="card-title">File Sharing</h2>
+							<p class="card-text">
+								This is a file sharing web app/website by using this website you can upload your file in this website and share your file over the internet.NOTE:your file will be available only for 15 Minutes.After 15 Minutes your file will be deleted automatically
+							</p>
+							<div class="wrapper">
+								<a href="https://github.com/fh-rabbi/Ftp-Server-Web"><button><i class="fab fa-github"></i></button></a>
+								<a href="https://www.frabbi.cf"><button><iconify-icon icon="mdi:web"></iconify-icon></button></a>
+							</div>
+							<div class="tech">
+								<span>nodejs</span>
+								<span>expressjs</span>
+								<span>mongodb</span>
+							</div>
+						</div>
+					</div> <!--Card Close-->
+					<div class="card"> <!--Card Start-->
+						<img width="100%" class="" alt="Banner" />
+						<div class="card-body">
+							<h2 class="card-title">Public Note</h2>
+							<p class="card-text">
+								This is a simple note application for public.Anyone can create note in this website without creating account and by sharing this website url you can share your note with anyone over the internet.
+							</p>
+							<div class="wrapper">
+								<a href="https://github.com/fh-rabbi/Ftp-Server-Web"><button><i class="fab fa-github"></i></button></a>
+								<a href="https://www.frabbi.cf"><button><iconify-icon icon="mdi:web"></iconify-icon></button></a>
+							</div>
+							<div class="tech">
+								<span>nodejs</span>
+								<span>expressjs</span>
+								<span>mongodb</span>
+								<span>firebase</span>
+							</div>
+						</div>
+					</div> <!--Card Close-->
+				</div>
+			</div>
+			
+			<!--Others Projects-->
+			<div class="others-projects projects-container">
+				<!--This Div For Responsive Design-->
+				<div class="card-container">
+					<div class="card"> <!--Card Start-->
+						<img width="100%" class="" alt="Thumnail" />
+						<div class="card-body">
+							<h2 class="card-title">Evil Text</h2>
 							<p class="card-text">
 								This is a simple gradient generator website
 							</p>
@@ -245,7 +338,7 @@
 						</div>
 					</div> <!--Card Close-->
 					<div class="card"> <!--Card Start-->
-						<img width="100%" class="" src="https://zonayed.me/static/gradienta-a8e5b430898f3170d42032b83fc34b8e.jpg" alt="" />
+						<img width="100%" class="" alt="Thumnail" />
 						<div class="card-body">
 							<h2 class="card-title">Gmail Bomber</h2>
 							<p class="card-text">
@@ -265,16 +358,71 @@
 				</div>
 			</div>
 		</div>
+		<!--Contact Me-->
+		<p id="contact"></p>
+		<div class="contact-container">
+		<div class="section-label">
+			<hr />
+			<h3>Contact Me</h3>
+			<hr />
+		</div>
+		<form accept-charset="utf-8">
+			<div class="input-box">
+				<input required="" placeholder="Name" class="input" type="text" value="" />
+				<i class="fas fa-user"></i>
+			</div>
+			<div class="input-box">
+				<input required="" placeholder="Email" class="input" type="email" value="" />
+				<i class="fas fa-envelope"></i>
+			</div>
+			<div class="input-box">
+				<input required="" placeholder="Phone" class="input" type="number" value="" />
+				<i class="fas fa-phone"></i>
+			</div>
+			<div class="input-box">
+				<textarea required="" placeholder="Message" class="input message-input" rows="8" cols="40"></textarea>
+				<i class="fa-solid fa-message"></i>
+			</div>
+			<button class="send-btn">Send <iconify-icon icon="bxl:telegram"></iconify-icon></button>
+		</form>
+		</div>		
    </main>
    
    <footer>
-		
+		<h2>Fazle's Portfolio</h2>
+		<p>Thank you for visiting my personal portfolio website.Connect with me over social.</p>
+		<div class="quic-links">
+			<h2>Quic Links</h2>
+			<div class="quic-links-box">
+				<a class="" href="#home"><iconify-icon icon="mdi:arrow-right-drop-circle"></iconify-icon> Home</a>
+				<a class="" href="#about"><iconify-icon icon="mdi:arrow-right-drop-circle"></iconify-icon> About</a>
+				<a class="" href="#skills"><iconify-icon icon="mdi:arrow-right-drop-circle"></iconify-icon> Skills</a>
+				<a class="" href="#projects"><iconify-icon icon="mdi:arrow-right-drop-circle"></iconify-icon> Contact</a>
+			</div>
+		</div>
+		<div class="contact-info">
+			<h2>Contact Info</h2>
+			<p class="">
+				<i class="fas fa-envelope"></i>
+				fazlerabbi@mbox.re
+			</p>
+			<div class="social-links">
+				<a class="" href="https://facebook.com/fozley.rabbi"><i class="fab fa-facebook"></i></a>
+				<a class="" href="https://instagram.com/___fazle_rabbi___"><i class="fab fa-instagram"></i></a>
+				<a class="" href="https://github.com/fh-rabbi"><i class="fab fa-github"></i></a>
+				<a class="" href="https://twitter.com/fhrabbi"><i class="fab fa-twitter"></i></a>
+				<a class="" href="https://t.me/fhrabbi"><i class="fab fa-telegram"></i></a>
+			</div>
+		</div>
+		<hr class="footer-divider"/>
+		<p class="last-text">Made With &hearts; By <span class="last-name">Fazle Rabbi</span></p>
    </footer>
    
    
    <script src="https://code.iconify.design/iconify-icon/1.0.5/iconify-icon.min.js"></script>
    <script src="js/navbar.js" type="text/javascript" charset="utf-8"></script>
    <script src="js/skills.js" type="text/javascript" charset="utf-8"></script>
+   <script src="js/projects.js" type="text/javascript" charset="utf-8"></script>
    
 </body>
 </html>	
