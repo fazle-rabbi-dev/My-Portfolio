@@ -1,3 +1,9 @@
+::selection {
+  color: #1c256a;
+  background: yellow;
+  padding: 2px 6px;
+}
+
 .section-label{
 	display: flex;
 	justify-content: center;
@@ -39,4 +45,27 @@
 
 .close{
 	right: -200px;
+}
+
+.back-to-top{
+	position: fixed;
+	/* top: 0; */
+	bottom: 20px;
+	right: 20px;
+	height: 40px;
+	width: 40px;
+	border-radius: 20px;
+	background: orange;
+	z-index: 999990;
+	font-size: 1.3rem;
+	border: none;
+	/* display: none; */
+	opacity: 0;
+	transition: 1s;
+}
+
+
+.back-to-top iconify-icon{
+	color: #222;
+	font-size: 2rem;
 }

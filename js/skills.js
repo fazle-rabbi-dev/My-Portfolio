@@ -26,24 +26,24 @@ function showSkills(visible, hide1, hide2) {
 		web_btn.style = btnFill;
 		programmingSkills.style.display = 'none'
 		otherSkills.style.display = 'none'
-		skillsContainer.style.height = '800px'
-		webSkills.style.display = 'block'
+		// skillsContainer.style.height = '800px'
+		webSkills.style.display = 'flex'
 	} else if (visible == 'programmingSkills') {
 		web_btn.style = btnOutline;
 		other_btn.style = btnOutline;
 		programming_btn.style = btnFill;
 		webSkills.style.display = 'none'
 		otherSkills.style.display = 'none'
-		skillsContainer.style.height = '320px'
-		programmingSkills.style.display = 'block'
+		// skillsContainer.style.height = '320px'
+		programmingSkills.style.display = 'flex'
 	} else {
 		programming_btn.style = btnOutline;
 		web_btn.style = btnOutline;
 		other_btn.style = btnFill;
 		webSkills.style.display = 'none'
 		programmingSkills.style.display = 'none'
-		skillsContainer.style.height = '440px'
-		otherSkills.style.display = 'block'
+		// skillsContainer.style.height = '440px'
+		otherSkills.style.display = 'flex'
 	}
 
 }
@@ -58,3 +58,6 @@ function showSkills(visible, hide1, hide2) {
 	other_btn.addEventListener("click", ()=> {
 		showSkills('otherSkills', 'webSkills', 'programmingSkills');
 	});
+	
+	
+

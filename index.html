@@ -38,14 +38,15 @@
    <nav class="nav-bar test">
 			<div class="navbar-wrapper">
 				<span>Menu</span>
-				<img width="20px" class="close close-nav" src="images/close.png" alt="" />
+				<iconify-icon style="color:white;" class="close close-nav" icon="ic:outline-close"></iconify-icon>
 			</div>
 			<hr class="navbar-hr"/>
 			<div class="nav-link-wrapper">
-				<li class="nav-item about-link"><a class="nav-link" href="#about"><img class="nav-link-icon" width="18px" src="images/about.png" alt="" />About</a></li>
-				<li class="nav-item skill-link"><a class="nav-link" href="#skills"><img class="nav-link-icon" width="18px" src="images/skills.png" alt="" />Skills</a></li>
-				<li class="nav-item project-link"><a class="nav-link" href="#projects"><img class="nav-link-icon" width="18px" src="images/project.png" alt="" />Projects</a></li>
-				<li class="nav-item contact-link"><a class="nav-link" href="#contact"><img class="nav-link-icon" width="18px" src="images/contact.png" alt="" />Contact</a></li>
+				<li class="nav-item about-link"><a class="nav-link" href="#home"><iconify-icon class="nav-link-icon" icon="ic:round-home"></iconify-icon>Home</a></li>
+				<li class="nav-item about-link"><a class="nav-link" href="#about"><iconify-icon class="nav-link-icon" icon="mdi:about-circle-outline"></iconify-icon>About</a></li>
+				<li class="nav-item skill-link"><a class="nav-link" href="#skills"><iconify-icon class="nav-link-icon" icon="game-icons:skills"></iconify-icon>Skills</a></li>
+				<li class="nav-item project-link"><a class="nav-link" href="#projects"> <iconify-icon class="nav-link-icon" icon="ri:projector-2-line"></iconify-icon>Projects</a></li>
+				<li class="nav-item contact-link"><a class="nav-link" href="#contact"><iconify-icon class="nav-link-icon" icon="mdi:contact"></iconify-icon>Contact</a></li>
 			</div>
 	</nav>
    
@@ -75,6 +76,7 @@
 					<a href="https://instagram.com/___fazle_rabbi___"><i class="fab fa-instagram"></i></a>
 					<a href="#"><i class="fab fa-linkedin"></i></a>
 					<a href="https://twitter.com/fhrabbi"><i class="fab fa-twitter"></i></a>
+					<a class="" href="https://t.me/fhrabbi"><i class="fab fa-telegram"></i></a>
 				</div>
 			</div>
 		</div>
@@ -88,14 +90,15 @@
 			</div>
 			<div class="about-container">
 				<div class="image-wrapper">
-					<img width="100%" src="images/fazle-rabbi.jpg" alt="" />
+					<img src="images/fazle-rabbi.jpg" alt="" />
 				</div>
 				<div class="about-info">
 					<p>
 						Hello im Fazle Rabbi,a passionate Web & Mobile application developer and I am currently studying B.S.C honours in botany department.I love to do awesome things by writing codes. My favourite hobby is coding.Writing codes & developing apps are my passion.
-						My favourite languages is Javascript & Python.
+						My favourite languages is Javascript & Pythonn So,
+						I love to do most of the things using JavaScript & Python
 					</p>
-					<div class="btn-wrapper">
+					<div class="btn-wrapper btn-wrapper-inside-about">
 						<button class="btn btn-resume">Get Resume</button>
 						<button class="btn btn-about" onclick="window.location = '#skills'">My Skills</button>
 					</div>
@@ -368,15 +371,15 @@
 		</div>
 		<form accept-charset="utf-8">
 			<div class="input-box">
-				<input required="" placeholder="Name" class="input" type="text" value="" />
+				<input required="" placeholder="Name" class="input name-field" type="text" value="" />
 				<i class="fas fa-user"></i>
 			</div>
 			<div class="input-box">
-				<input required="" placeholder="Email" class="input" type="email" value="" />
+				<input required="" placeholder="Email" class="input email-field" type="email" value="" />
 				<i class="fas fa-envelope"></i>
 			</div>
 			<div class="input-box">
-				<input required="" placeholder="Phone" class="input" type="number" value="" />
+				<input required="" placeholder="Phone" class="input number-field" type="number" value="" />
 				<i class="fas fa-phone"></i>
 			</div>
 			<div class="input-box">
@@ -385,7 +388,10 @@
 			</div>
 			<button class="send-btn">Send <iconify-icon icon="bxl:telegram"></iconify-icon></button>
 		</form>
-		</div>		
+		</div>
+		<button class="back-to-top">
+			<iconify-icon icon="material-symbols:keyboard-arrow-up-rounded"></iconify-icon>
+		</button>
    </main>
    
    <footer>
@@ -423,6 +429,8 @@
    <script src="js/navbar.js" type="text/javascript" charset="utf-8"></script>
    <script src="js/skills.js" type="text/javascript" charset="utf-8"></script>
    <script src="js/projects.js" type="text/javascript" charset="utf-8"></script>
+   <script src="js/form.js" type="text/javascript" charset="utf-8"></script>
+   <script src="js/utility.js" type="text/javascript" charset="utf-8"></script>
    
 </body>
 </html>	

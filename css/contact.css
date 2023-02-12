@@ -1,6 +1,7 @@
 .contact-container{
+	margin-top: 70px;
 	margin-bottom: 30px;
-	width: 100%;
+	/* width: 100%; */
 }
 
 .contact-container > form{
@@ -97,4 +98,19 @@
 }
 
 
+
+/* Responsive Design */
+
+
+
+@media only screen and (min-width: 768px) {
+	.contact-container{
+		margin: 100px 20px;
+	}
+	
+	.contact-container > form{
+		margin: 20px 20px;
+		padding: 80px;
+	}
+}
 
