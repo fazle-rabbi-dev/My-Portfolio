@@ -82,7 +82,12 @@
 .skill:hover{
 	/* background: red; */
 	transition: 1s;
-	transform: scale(1.040);
+	transform: scale(1.060);
+	
+}
+
+.skill:active{
+	/* background: whitesmoke; */
 }
 
 .skill-text{

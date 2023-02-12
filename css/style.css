@@ -33,6 +33,17 @@ header{
 	z-index: 999;
 }
 
+.header-righ-div{
+	/* background: red; */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.header-righ-div > i{
+	margin-right: 10px;
+}
+
 .nav-logo{
 	background: #222;
 	height: 10px;
@@ -63,6 +74,8 @@ header{
 
 .menu-icon{
 	/* background: red; */
+	color: #222;
+	font-size: 1.6rem;
 }
 
 /*Filter styles*/
