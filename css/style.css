@@ -26,6 +26,7 @@ body{
 }
 
 header{
+	top: 0;
 	height: 50px;
 	width: 100%;
 	position: fixed;
@@ -160,7 +161,7 @@ header{
 
 
 .intro{
-	/* margin-top: 100px; */
+	margin-top: 50px;
 	/* margin: 10px 0; */
 	text-align: center;
 	height: 100vh;
