@@ -8,20 +8,21 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	
 }
 
 .section-label h3{
 	background: #333;
-	padding: 0 5px;
+	height: 30px;
+	padding: 5px;
 	color: ghostwhite;
 	text-transform: uppercase;
-	font-family: 'Open Sans', sans-serif;
-	
+	/* font-family: 'Open Sans', sans-serif; */
+	font-family: 'Sofia Sans', sans-serif;
+	font-size: 1.2rem;
 }
 
 .section-label > hr{
-	width: 25px;
+	width: 30px;
 	height: .5px;
 	border: .5px solid #222;
 }

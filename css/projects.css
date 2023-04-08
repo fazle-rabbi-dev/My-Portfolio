@@ -24,6 +24,7 @@
 	box-shadow: 0px 10px 25px rgba(0,0,0,.20);
 	margin-top: 20px;
 	width: 100%;
+	border-radius: 5px;
 }
 
 .card-body{
@@ -31,13 +32,13 @@
 }
 
 .card-title{
-	font-size: 2rem;
-	font-family: 'Sofia Sans', sans-serif;
+	font-size: 1.3rem;
+	font-family: 'Unbounded', cursive;
 }
 
 .card-text{
-	font-family: 'Montserrat', sans-serif;
-	margin: 5px 0;
+  font-family: 'Open Sans', sans-serif;	
+  margin-top: 10px;
 }
 
 .card-body .wrapper{
@@ -46,15 +47,16 @@
 
 .card-body .wrapper a > button{
 	margin: 10px 0;
-	background: ghostwhite;
+	background: white;
 	border: none;
 	border-radius: 5px;
 	/* padding: 5px 20px; */
 	height: 40px;
 	width: 40px;
 	padding: 5px;
-	box-shadow: 0px 5px 15px rgba(0,0,0,.20);
+	/* box-shadow: 0px 5px 15px rgba(0,0,0,.20); */
 	color: #784beb;
+	border: .5px solid gray;
 }
 
 .card-body .wrapper a > button:hover{
