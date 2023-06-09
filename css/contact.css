@@ -40,6 +40,8 @@
 	outline: 0;
 	font-size: 15px;
 	background: ghostwhite;
+	/* background: none; */
+	/* border: .5px solid white; */
 }
 
 .input:hover{

@@ -24,11 +24,12 @@
 </head>
 <body>
    
+  <span id="toop"></span>
    <header>
 		<div class="nav-container">
 			<div class="">
 				<!-- <img width="28px" class="logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT01aPyJJO04sk-jjLqXwPhbGXq8z0Lq1mgcQ&usqp=CAU" alt="" /> -->
-				<a class="" href="#home"><span class="nav-logo">FR</span></a>
+				<a class="" onclick="goToSection('toop')"><span class="nav-logo">FR</span></a>
 			</div>
 			<div class="header-righ-div">
 				<i class="mode fa-xl far fa-moon"></i>
@@ -42,11 +43,11 @@
 			</div>
 			<hr class="navbar-hr"/>
 			<div class="nav-link-wrapper">
-				<li class="nav-item about-link"><a class="nav-link" href="#home"><iconify-icon class="nav-link-icon" icon="ic:round-home"></iconify-icon>Home</a></li>
-				<li class="nav-item about-link"><a class="nav-link" href="#about"><iconify-icon class="nav-link-icon" icon="mdi:about-circle-outline"></iconify-icon>About</a></li>
-				<li class="nav-item skill-link"><a class="nav-link" href="#skills"><iconify-icon class="nav-link-icon" icon="game-icons:skills"></iconify-icon>Skills</a></li>
-				<li class="nav-item project-link"><a class="nav-link" href="#projects"> <iconify-icon class="nav-link-icon" icon="ri:projector-2-line"></iconify-icon>Projects</a></li>
-				<li class="nav-item contact-link"><a class="nav-link" href="#contact"><iconify-icon class="nav-link-icon" icon="mdi:contact"></iconify-icon>Contact</a></li>
+				<li class="nav-item about-link"><a onclick="goToSection('home')" class="nav-link"><iconify-icon class="nav-link-icon" icon="mdi:home-outline"></iconify-icon>Home</a></li>
+				<li class="nav-item about-link"><a onclick="goToSection('about')" class="nav-link"><iconify-icon class="nav-link-icon" icon="mdi:about-circle-outline"></iconify-icon>About</a></li>
+				<li class="nav-item skill-link"><a onclick="goToSection('skills')" class="nav-link"><iconify-icon class="nav-link-icon" icon="game-icons:skills"></iconify-icon>Skills</a></li>
+				<li class="nav-item project-link"><a onclick="goToSection('projects')" class="nav-link"> <iconify-icon class="nav-link-icon" icon="ri:projector-2-line"></iconify-icon>Projects</a></li>
+				<li class="nav-item contact-link"><a onclick="goToSection('contact')" class="nav-link"><iconify-icon class="nav-link-icon" icon="lucide:contact-2"></iconify-icon>Contact</a></li>
 			</div>
 	</nav>
    </header>
@@ -57,6 +58,7 @@
 		  <h4 id="toast-text">✅ Dark mode enabled</h4>
 		</div>
 		<!-- Introduction -->
+		<span id="home"></span>
 		<p id="home"></p>
 		<div class="intro">
 			<h4 class="hi">Hi 👋, Im</h4>
@@ -76,12 +78,12 @@
 					<hr />
 				</div>
 				<div class="follow-link-container">
-					<a href="https://github.com/fh-rabbi"><i class="fab fa-github"></i></a>
-					<a href="https://facebook.com/fozley.rabbi"><i class="fab fa-facebook"></i></a>
-					<a href="https://instagram.com/___fazle_rabbi___"><i class="fab fa-instagram"></i></a>
-					<a href="https://linkedin.com/in/im-fazle-rabbi"><i class="fab fa-linkedin"></i></a>
-					<a href="https://twitter.com/fhrabbi"><i class="fab fa-twitter"></i></a>
-					<a class="" href="https://t.me/fhrabbi"><i class="fab fa-telegram"></i></a>
+					<a href="https://github.com/fh-rabbi"><i class="socialicon fab fa-github"></i></a>
+					<a href="https://facebook.com/fozley.rabbi"><i class="socialicon fab fa-facebook"></i></a>
+					<a href="https://instagram.com/___fazle_rabbi___"><i class="socialicon fab fa-instagram"></i></a>
+					<a href="https://linkedin.com/in/im-fazle-rabbi"><i class="socialicon fab fa-linkedin"></i></a>
+					<a href="https://twitter.com/fhrabbi"><i class="socialicon fab fa-twitter"></i></a>
+					<a href="https://t.me/fhrabbi"><i class="socialicon fab fa-telegram"></i></a>
 				</div>
 			</div>
 		</div>
@@ -100,8 +102,8 @@
 				<div class="about-info">
 					<p id="about-text">
 						Hello! i am Fazle Rabbi,a passionate Web & Mobile application developer and I am currently studying B.S.C honours in botany department.I love to do awesome things by writing codes. My favourite hobby is coding.Writing codes & developing apps are my passion.
-						My favourite languages is Javascript & Pythonn So,
-						I love to do most of the things using JavaScript & Python
+						My favourite languages are Javascript & Python.That's why,
+						i love to do most of the things using JavaScript & Python
 					</p>
 					<div class="btn-wrapper btn-wrapper-inside-about">
 						<button class="btn btn-resume">Get Resume</button>
@@ -435,7 +437,7 @@
 			<h3>Contact Me</h3>
 			<hr />
 		</div>
-		<form accept-charset="utf-8">
+		<form class="" accept-charset="utf-8">
 			<div class="input-box">
 				<input required="" placeholder="Name" class="input name-field" type="text" value="" />
 				<i class="fas fa-user"></i>

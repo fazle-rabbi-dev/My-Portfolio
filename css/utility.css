@@ -79,6 +79,10 @@
   background: #1b0e31!important;
 }
 
+.bg-dark-label{
+  background: #444!important;
+}
+
 .bg-light{
   background: ghostwhite!important;
 }
@@ -88,9 +92,43 @@
 }
 
 .text-dark{
+  /* color: #1b0e31!important; */
   color: #1b0e31!important;
 }
 
+.bg-dark-projects{
+  background: none;
+	border: 1px solid white;
+	color: white;
+}
+
+.bg-light-projects{
+  background: none;
+	border: 1px solid white;
+	color: #000;
+}
+
+.bg-dark-skills{
+  background: none;
+	border: 1px solid white;
+	color: white;
+}
+
+.bg-light-skills{
+  background: none;
+	border: none;
+	color: black;
+}
+
+.bg-dark-contact{
+  background: none!important;
+	border: 1px solid white;
+}
+
+.bg-light-contact{
+  background: ghostwhite!important;
+	border: 1px solid white;
+}
 
 .toast-container{
   opacity: 0;
@@ -106,11 +144,10 @@
   font-family: 'Open Sans', sans-serif;
   font-size: .7rem;
   transition: 1s linear;
+  z-index: 99;
 }
 
 /*
-change label color
-change icon color
 change nav style
 remove bookmarking #
 add iconify icons
