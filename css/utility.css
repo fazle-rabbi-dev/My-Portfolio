@@ -11,20 +11,23 @@
 }
 
 .section-label h3{
-	background: #333;
-	height: 30px;
-	padding: 5px;
+	background: #444;
+	height: 35px;
+	padding: 0 10px;
 	color: ghostwhite;
 	text-transform: uppercase;
 	/* font-family: 'Open Sans', sans-serif; */
 	font-family: 'Sofia Sans', sans-serif;
 	font-size: 1.2rem;
+	display: flex;
+	align-items: center;
 }
 
-.section-label > hr{
-	width: 30px;
-	height: .5px;
-	border: .5px solid #222;
+.section-label hr{
+	width: 40px;
+	height: 3px;
+	border: 0;
+	background: #444;
 }
 
 
@@ -70,3 +73,45 @@
 	color: #222;
 	font-size: 2rem;
 }
+
+
+.bg-dark{
+  background: #1b0e31!important;
+}
+
+.bg-light{
+  background: ghostwhite!important;
+}
+
+.text-light{
+  color: ghostwhite!important;
+}
+
+.text-dark{
+  color: #1b0e31!important;
+}
+
+
+.toast-container{
+  opacity: 0;
+  position: fixed;
+  top: 30;
+  right: 0;
+  left: 0;
+  background: #d1c5f7;
+  margin: 10px;
+  border-radius: 10px;
+  padding: 5px;
+  border: .5px #784beb;
+  font-family: 'Open Sans', sans-serif;
+  font-size: .7rem;
+  transition: 1s linear;
+}
+
+/*
+change label color
+change icon color
+change nav style
+remove bookmarking #
+add iconify icons
+*/
