@@ -35,9 +35,13 @@ close_menu_btn.addEventListener("click", ()=>{
 function hideHeader(label){
 	if(label == 'hide'){
 		nav_bar.style.opacity = '0';
+		header.style.opacity = '0';
+		header.style.pointerEvents = "none"
 	}
 	else{
 		nav_bar.style.opacity = '1';
+		header.style.opacity = '1';
+		header.style.pointerEvents = "auto"
 	}
 }
 

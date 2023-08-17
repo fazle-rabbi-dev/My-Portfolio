@@ -59,13 +59,17 @@
 	height: 40px;
 	width: 40px;
 	border-radius: 20px;
-	background: orange;
+	background: #5716fe;
 	z-index: 999990;
 	font-size: 1.3rem;
 	border: none;
 	/* display: none; */
 	opacity: 0;
 	transition: 1s;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 
